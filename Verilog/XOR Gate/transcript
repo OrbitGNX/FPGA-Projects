@@ -1,0 +1,33 @@
+# Compile of testbench.v was successful.
+# Compile of xor_mod.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of xor_mod.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 11:28:20 on Aug 03,2025
+# Loading work.testbench
+# Loading work.xor_mod
+# ** Error: (vsim-3063) Port 'a' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/FPGA Projects/Verilog/XOR Gate/testbench.v Line: 5
+# ** Error: (vsim-3063) Port 'b' not found in the connected module (2nd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/FPGA Projects/Verilog/XOR Gate/testbench.v Line: 5
+# ** Error: (vsim-3063) Port 'y' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/FPGA Projects/Verilog/XOR Gate/testbench.v Line: 5
+# Error loading design
+# End time: 11:28:21 on Aug 03,2025, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 12
+# A time value could not be extracted from the current line
+# Compile of testbench.v was successful.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 11:30:36 on Aug 03,2025
+# Loading work.testbench
+# Loading work.xor_mod
+add wave -position end  sim:/testbench/a
+add wave -position end  sim:/testbench/b
+add wave -position end  sim:/testbench/y
+run
+# End time: 11:31:25 on Aug 03,2025, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 2
